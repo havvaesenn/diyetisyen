@@ -795,15 +795,18 @@ var REVIEWS=[
  {i:'AK',n:'A. K.',ago:'1 ay önce',tag:'Yüz Yüze Danışmanlık',c:['#f1e8fb','#6a3d9a'],
   short:'Havvanur hanıma gittiğim gün; uzun yıllardır sürdürdüğüm SIT tedavinin yan etkilerinden kaynaklı flaman kaybetmiştim. Bilgisiyle ve araştırmayı yönüyle tüm…',
   full:'Havvanur hanıma gittiğim gün; uzun yıllardır sürdürdüğüm SIT tedavinin yan etkilerinden kaynaklı flaman kaybetmiştim. Bilgisiyle ve araştırmayı yönüyle tüm…',cut:true},
- {i:'ABA',n:'A. B. A.',ago:'2 ay önce',tag:'Online',c:['#fde4e8','#b02a45'],
+ {i:'ABA',n:'A. B. A.',ago:'2 ay önce',tag:'Online Danışmanlık',c:['#fde4e8','#b02a45'],
   short:'Diyet sürecinde kendisinden danışmanlık aldım ve önerileri benim için oldukça net ve anlaşılır, genel olarak harika ilerledi. İlgisi için kendisine…',
   full:'Diyet sürecinde kendisinden danışmanlık aldım ve önerileri benim için oldukça net ve anlaşılır, genel olarak harika ilerledi. İlgisi için kendisine…',cut:true},
- {i:'D1',n:'D. Y.',ago:'3 ay önce',tag:'Yüz Yüze Danışmanlık',c:['#e3f1ea','#2d7a50'],
-  short:'Buraya Google Haritalar\'daki gerçek yorum metnini yapıştırın.',full:'Buraya Google Haritalar\'daki gerçek yorum metnini yapıştırın.',ph:true},
- {i:'D2',n:'S. T.',ago:'4 ay önce',tag:'Online',c:['#e6eef8','#3a6794'],
-  short:'Buraya Google Haritalar\'daki gerçek yorum metnini yapıştırın.',full:'Buraya Google Haritalar\'daki gerçek yorum metnini yapıştırın.',ph:true},
- {i:'D3',n:'M. E.',ago:'5 ay önce',tag:'Yüz Yüze Danışmanlık',c:['#fbeee6','#b8683a'],
-  short:'Buraya Google Haritalar\'daki gerçek yorum metnini yapıştırın.',full:'Buraya Google Haritalar\'daki gerçek yorum metnini yapıştırın.',ph:true}
+ {i:'NK',n:'N. K.',ago:'1 yıl önce',tag:'Yüz Yüze Danışmanlık',c:['#e3f1ea','#2d7a50'],
+  short:'Havva Nur hanıma çok teşekkür ederim. Her konuda yardımcı oldu. Hastalıklarımdan iyileşme yönünde çok yol kat ettik. Uyguladığı diyet programı sayesinde 10 kilo verdim. Doğru şekilde yönlendirmesi insana güven veriyor. Anlayışlı tutumundan dolayı çok memnun kaldım. Teşekkürler...',
+  full:'Havva Nur hanıma çok teşekkür ederim. Her konuda yardımcı oldu. Hastalıklarımdan iyileşme yönünde çok yol kat ettik. Uyguladığı diyet programı sayesinde 10 kilo verdim. Doğru şekilde yönlendirmesi insana güven veriyor. Anlayışlı tutumundan dolayı çok memnun kaldım. Teşekkürler...'},
+ {i:'UD',n:'U. D.',ago:'1 yıl önce',tag:'Online Danışmanlık',c:['#e6eef8','#3a6794'],
+  short:'Geçtiğimiz yıl diyetisyenimle başladığım bu serüven sayesinde 20 kilo verdim ve kendimi hiç olmadığım kadar iyi hissediyorum. Bu süreçte hem sağlıklı beslenmeyi öğrendim hem de kendime olan güvenimi geri kazandım. Diyetisyenim her zaman ilgili, sabırlı ve motive ediciydi. Hazırladığı programlar tamamen bana özeldi ve sürdürülebilirliği ön plandaydı. Her soruma içtenlikle yanıt verdi, her zorlukta yanımda oldu. Bu süreçte yalnızca kilo değil, yepyeni bir yaşam tarzı kazandım. Gönül rahatlığıyla tavsiye ediyorum.',
+  full:'Geçtiğimiz yıl diyetisyenimle başladığım bu serüven sayesinde 20 kilo verdim ve kendimi hiç olmadığım kadar iyi hissediyorum. Bu süreçte hem sağlıklı beslenmeyi öğrendim hem de kendime olan güvenimi geri kazandım. Diyetisyenim her zaman ilgili, sabırlı ve motive ediciydi. Hazırladığı programlar tamamen bana özeldi ve sürdürülebilirliği ön plandaydı. Her soruma içtenlikle yanıt verdi, her zorlukta yanımda oldu. Bu süreçte yalnızca kilo değil, yepyeni bir yaşam tarzı kazandım. Gönül rahatlığıyla tavsiye ediyorum.'},
+ {i:'EE',n:'E. E.',ago:'1 yıl önce',tag:'Online Danışmanlık',c:['#fbeee6','#b8683a'],
+  short:'Havva hanım ile sağlık için bir yolculuğa çıktık. Bu yolculuğa verdiği guzel destekleri ile birlikte aldığımız guzel sonuçtan çok memnunum. Kendisi ile online görüşme gerçekleştirmemize rağmen her an yanınızda gibi hissettiriyor. gayet neşeli doğal samimi ve çok pozitif. Daha ne olsun',
+  full:'Havva hanım ile sağlık için bir yolculuğa çıktık. Bu yolculuğa verdiği guzel destekleri ile birlikte aldığımız guzel sonuçtan çok memnunum. Kendisi ile online görüşme gerçekleştirmemize rağmen her an yanınızda gibi hissettiriyor. gayet neşeli doğal samimi ve çok pozitif. Daha ne olsun'}
 ];
 var MAPS='https://www.google.com/maps/search/?api=1&query=Diyetisyen+Havva+Nur+Esen+Serdivan+Sakarya';
 var WA='905303661720';
@@ -1051,7 +1054,7 @@ track.innerHTML=html+html;
 dotsEl.innerHTML=REVIEWS.map(function(_,i){return '<i'+(i===0?' class="on"':'')+'></i>'}).join('');
 var dotEls=$$('i',dotsEl);
 
-var x=0,target=null,paused=false,reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var x=0,target=null,hover=false,touching=false,last=0,SPEED=26;
 function step(){var c=$('.rcard',track);return c?c.offsetWidth+16:316}
 function setX(v){
   var w=step()*REVIEWS.length;
@@ -1060,20 +1063,23 @@ function setX(v){
   var idx=Math.round(x/step())%REVIEWS.length;
   dotEls.forEach(function(d,i){d.classList.toggle('on',i===idx)});
 }
-function loop(){
+/* Yorumlar sürekli, yavaş ve kesintisiz akar; yalnızca imleç üzerindeyken (veya pencere açıkken) durur. */
+function loop(t){
+  var dt=last?Math.min(t-last,64):16;last=t;
   if(target!==null){
     var d=target-x;
     if(Math.abs(d)<.6){x=target;target=null;setX(x)}else setX(x+d*.14);
-  }else if(!paused&&!reduce&&ov.hidden){setX(x+.45)}
+  }else if(!hover&&!touching&&ov.hidden){setX(x+SPEED*dt/1000)}
   requestAnimationFrame(loop);
 }
-['mouseenter','focusin','touchstart'].forEach(function(ev){view.addEventListener(ev,function(){paused=true},{passive:true})});
-['mouseleave','focusout','touchend'].forEach(function(ev){view.addEventListener(ev,function(){paused=false},{passive:true})});
+view.addEventListener('mouseenter',function(){hover=true});
+view.addEventListener('mouseleave',function(){hover=false});
+view.addEventListener('touchstart',function(){touching=true},{passive:true});
+['touchend','touchcancel'].forEach(function(ev){view.addEventListener(ev,function(){setTimeout(function(){touching=false},1500)},{passive:true})});
 $('#next').addEventListener('click',function(){target=(target!==null?target:x)+step()});
 $('#prev').addEventListener('click',function(){target=(target!==null?target:x)-step()});
 track.addEventListener('click',function(e){var c=e.target.closest('[data-rv]');if(c)openReview(+c.getAttribute('data-rv'))});
 track.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-rv]')){e.preventDefault();openReview(+e.target.getAttribute('data-rv'))}});
-document.addEventListener('visibilitychange',function(){paused=document.hidden});
 setX(0);requestAnimationFrame(loop);
 
 })();
