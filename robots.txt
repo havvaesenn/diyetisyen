@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diyetisyenhavvanuresen.com/sitemap.xml
