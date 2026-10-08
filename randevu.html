@@ -1201,8 +1201,20 @@
     else if(path==='online-randevu'){document.getElementById('format-group').scrollIntoView({behavior:'smooth',block:'center'});}
     else{window.scrollTo({top:0,behavior:'smooth'});} // ana-sayfa
   }
-  document.querySelectorAll('a[data-path]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.dataset.path);}));
+document.querySelectorAll('a[data-path]').forEach(a => {
+    a.addEventListener('click', e => {
+        const path = a.dataset.path;
 
+        if (path === 'ana-sayfa') {
+            window.location.href = 'https://diyetisyenhavvanuresen.com/';
+            return;
+        }
+
+        e.preventDefault();
+        go(path);
+    });
+});
+            
   // Klavye erişimi: KVKK rozeti (role=button)
   document.querySelectorAll('[role="button"][onclick]').forEach(el=>el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}}));
 
