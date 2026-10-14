@@ -808,7 +808,7 @@ svg.i{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.8;stroke
         <div class="rdv-foot">
           <span class="kvkk">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
-            KVKK Güvenceli Gizlilik
+            KVKK Aydınlatma Metni
           </span>
           <span class="live">Aktif Randevu</span>
         </div>
@@ -1235,7 +1235,7 @@ function calc(){
   $('#bmiRange').textContent=lo+' - '+hi+' kg';
   var p=$('#bmiPill'),n=$('#bmiNote'),cls='pillstat',txt,note;
   if(b<18.5){txt='Zayıf Aralık';cls+=' b';note='İdeal aralığın altındasınız. Sağlıklı kilo alma programı için danışmanlık alabilirsiniz.'}
-  else if(b<25){txt='Normal / İdeal Aralık';note='Kliniğimiz standartlarına göre ideal aralıktasınız. Koruma ve sağlıklı beslenme düzeni sürdürülebilir.'}
+  else if(b<25){txt='Normal / İdeal Aralık';note='Dünya Sağlık Örgütü sınıflamasına göre ideal aralıktasınız. Koruma ve sağlıklı beslenme düzeni sürdürülebilir.'}
   else if(b<30){txt='Fazla Kilolu Aralık';cls+=' w';note='İdeal aralığın üzerindesiniz. Kas kaybı olmadan yağ yakımı için kişiye özel plan önerilir.'}
   else{txt='Obezite Aralığı';cls+=' r';note='Tahlil ve klinik değerlendirme eşliğinde bir program planlanması önerilir.'}
   p.className=cls;p.textContent=txt;n.textContent=note;
